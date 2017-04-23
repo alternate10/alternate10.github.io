@@ -1,0 +1,301 @@
+html{
+
+}
+
+body{
+	background-color: #F4F7FA;  
+	width: 100%;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+input[type="text"]{
+	height: 20px;
+    border: 1px solid #d9e1e7;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 200px;
+    margin: -10px 5px 0px 5px;
+}
+
+.button-1{
+	display: inline-block;
+    padding: 4px 17px;
+    border: 1px solid #6f8498;
+    border-radius: 6px;
+    background: #45a9c3;
+    color: white;
+    cursor: pointer;
+    margin: 3px 5px;
+}
+.button-2{
+	display: inline-block;
+    padding: 4px 17px;
+    border: 1px solid #6f8498;
+    border-radius: 6px;
+    background: #b32550;
+    color: white;
+    cursor: pointer;
+    margin: 3px 5px;
+}
+
+.button-3{
+	display: inline-block;
+    padding: 4px 23px;
+    border: 1px solid #91a7bb;
+    border-radius: 6px;
+    background: #293846;
+    color: #91a7bb;
+    cursor: pointer;
+    margin: 3px 5px;
+}
+
+/* ----- Nav Bar ----- */
+
+.main-navbar{
+	width: 12%;
+    min-width: 120px;
+    max-width: 200px;
+    background-color: #293846;
+    height: 100%;
+    position: fixed;
+}
+
+.main-navbar ul.nav {
+    list-style: none;
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+
+}
+
+.main-navbar ul.nav li i.fa{
+	color: #6f8498;
+	margin-right: 4px;
+}
+
+.main-navbar ul.nav li{
+	color: #6f8498;
+	height: 55px;
+    padding: 5px 0px 5px 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.main-navbar ul.nav li:hover{
+	color: #FFFFFF;
+    background-color: #1a2530;
+}
+
+.main-navbar ul.nav li:hover .fa{
+	color: #FFFFFF;
+}
+
+.main-navbar ul.nav li.selected{
+	border-left: 3px solid #41C3E5;
+    color: #FFFFFF; 
+    background-color: #1a2530;
+}
+
+.main-navbar ul.nav li.selected .fa{
+	color: #41C3E5;
+}
+
+.main-navbar ul.nav li div{
+    margin: 12px 0px;
+    font-size: 17px;
+}
+
+.button-prev{
+	float:left;
+}
+
+.button-next{
+	float:right; 
+}
+
+/* ----- Action Area ------ */
+
+.main-actionarea{ 
+	width: 88%;
+    height: 100% !important;
+    overflow: initial;
+    clear: both;
+    margin: 0px 20px 0px 12%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.block-nav-items:not(.selected){
+	display: none;
+}
+
+.block-nav-items{
+    clear: both;
+    padding: 10px 15px; 
+}
+
+/* --- GOAL --- */
+
+.add-goal-wr{
+    margin: 10px 0px;
+    line-height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 0px 10px 15px;
+}
+
+.add-goal-wr .goal-title{
+	text-align: left;
+    width: 100px;
+    margin: 0px 0px 0px 0px;
+    float: left;
+}
+
+.add-goal-wr .goal-title{
+	float: left;
+	max-width: 50%;
+	float: left;
+}
+
+.add-goal-wr .the-goal{
+	float:left;
+	font-size: 18px;
+}
+
+.add-goal-wr .change-goal{
+	margin: 0px 10px;
+	cursor: pointer;
+}
+.add-goal-wr .goal-ok{
+	margin: 0px 4px;
+	cursor: pointer;
+	font-size: 18px;
+}
+.add-goal-wr .goal-cancel{
+	margin: 0px 4px;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+
+/* ---- CRITERIA ---- */
+
+.exist-items-wr{
+	min-height: 20px;
+	margin: 5px 15px; 
+}
+
+.item-class{
+    line-height: 20px;
+    margin: 10px 0px;
+}
+
+.item-class .item-change{
+	margin-left: 8px;
+	cursor: pointer;
+}
+
+.item-class .hiddened  {
+	display: none;
+}
+
+.item-class .item-remove, .item-class .item-ok, .item-class .item-close{
+	margin: 0px 4px;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+.cri-alt-wr{
+	width: 100%;
+	overflow: hidden;
+}
+
+.cri-alt-wr .items-wrapper{
+	width: 49%;
+	box-sizing: border-box;
+	float: left;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 0px 10px 15px;
+    margin: 0px 0.5%;
+}
+
+
+.compares-wr .compare-item{
+	float: left;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 48%;
+    padding: 0px 10px 15px;
+    margin: 10px 1%;
+}
+
+.compares-wr{
+	overflow: hidden;
+	clear: both;
+}
+
+.compare-item>p{
+	text-align: center;
+}
+
+.compare-item>div{
+	text-align: center;
+}
+
+.comp-pair-crit{
+	margin: 0px 0px 20px;
+}
+
+/* ---- alter ---- */
+
+.comp-pair-alter-wr{
+	margin: 0px 0px 20px;
+}
+
+.comp-pair-alter-wr .comp-pair-alter-item{
+	margin: 10px 0px 15px;
+}
+
+.comp-pair-alter-item .comp-alter-it-title{
+	margin: 10px 0px;
+	text-align: center;
+	font-size: 17px;
+}
+
+.buttons-alter-itog{
+	margin-bottom: 50px;
+}
+
+.itog-fixed-window{
+	position: fixed;
+    bottom: 0px;
+    width: 88%;
+    margin: 0px 0px 0px -25px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px solid #293846;
+    background: #f4f7fa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
