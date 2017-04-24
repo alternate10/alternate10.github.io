@@ -646,6 +646,14 @@ $('.gotocritpage').on('click', function(){
 
 })
 
+$(".main-button-mp").on('click', function(){
+	$(".nav .mnav-items").removeClass('selected');
+	$(".nav .mnav-item-2").addClass('selected');
+
+	$(".main-actionarea .block-nav-items").removeClass('selected');
+	$(".main-actionarea .block-nav-item-2").addClass('selected'); 
+});
+
 
 	
 

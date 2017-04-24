@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<title>Alternate - is a system for decision makers</title>
+	<title>Alternate is a system for decision makers</title>
 	<script src="js/jquery.js"></script> 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
@@ -13,7 +13,7 @@
 		<div class="main-navbar">
 			<div class="navbar-wr">
 				<ul class="nav">
-					<li class="mnav-items mnav-item-1 selected"><div><i class="fa fa-home" aria-hidden="true"></i> <span>Главная</div></span></li>
+					<li class="mnav-items mnav-item-1 selected"><div><i class="fa fa-home" aria-hidden="true"></i> <span>Главная</div></span></li> 
 					<li class="mnav-items mnav-item-2"><div><i class="fa fa-cogs" aria-hidden="true"></i> <span>Параметры</div></span></li>
 					<li class="mnav-items mnav-item-3"><div><i class="fa fa-sitemap" aria-hidden="true"></i> <span>Критерии</div></span></li>
 					<li class="mnav-items mnav-item-4"><div><i class="fa fa-sliders" aria-hidden="true"></i></i> <span>Альтернативы</span></div></li>
@@ -26,7 +26,7 @@
 		<div class="main-actionarea">
 
 			<div class="block-nav-items block-nav-item-1 selected"> 
-				<h1>Описание для главной</h1>
+				<div><div class="main-button-mp">Начать</div></div>
 			</div>
 			<div class="block-nav-items block-nav-item-2 selected">
 				<h2>Параметры</h2>
