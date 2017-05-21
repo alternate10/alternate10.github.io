@@ -5,9 +5,9 @@ html{
 
 body{
 	background-color: #F4F7FA;  
-	width: 100%;
+	width: 100%; 
     max-width: 100%;
-    margin: 0px;
+    margin: 0px; 
     padding: 0px;
     font-family: Geneva, Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -22,6 +22,44 @@ input[type="text"]{
     font-size: 16px;
     width: 200px;
     margin: -10px 5px 0px 5px;
+}
+
+b{
+    color: blue;
+}
+
+.background-wr{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.43);
+    z-index: 999;
+}
+
+.background-wr .notific-main-wr{
+    min-width: 200px;
+    width: 200px;
+    min-height: 100px;
+    margin: 100px auto;
+    background: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
+    border: 2px solid #949090;
+    border-radius: 20px;
+}
+
+.background-wr .notific-main-wr>i{
+    float: right;
+    font-size: 17px;
+}
+
+.background-wr .notific-main-wr>div{
+    width: 100%;
+}
+
+.hiddened{
+    display: none !important;
 }
 
 .button-1{
@@ -54,6 +92,11 @@ input[type="text"]{
     color: #91a7bb;
     cursor: pointer;
     margin: 3px 5px;
+}
+
+.button-3:hover{
+    color: white;
+    background: #1a2530;
 }
 
 /* ----- Nav Bar ----- */
@@ -154,6 +197,7 @@ input[type="text"]{
     background: url('../images/back-main.png'); 
     background-size: 100%;
     background-position: 0;
+    background-repeat: no-repeat;
 }
 
 .main-button-mp{
@@ -179,6 +223,15 @@ input[type="text"]{
 .block-nav-items{
     clear: both;
     padding: 20px 25px; 
+    transition: all 0.4s ease-in-out;
+}
+
+.faq-page-desc{
+    border-left: 1px solid #41c3e5; 
+    padding: 5px 10px 10px 20px;
+    margin-left: 20px;
+    overflow: hidden;
+    clear: both;
 }
 
 /* --- GOAL --- */
@@ -276,7 +329,7 @@ input[type="text"]{
     border-radius: 3px;
     box-sizing: border-box;
     width: 48%;
-    padding: 0px 10px 15px;
+    padding: 0px 10px 30px;
     margin: 10px 1%;
 }
 
@@ -287,6 +340,7 @@ input[type="text"]{
 
 .compare-item>p{
 	text-align: center;
+    margin-bottom: 30px;
 }
 
 .compare-item>div{
@@ -313,6 +367,15 @@ input[type="text"]{
 	font-size: 17px;
 }
 
+.comp-pair-alter-item .comp-alter-it-title>p {
+    font-size: 13px;
+    margin-top: 0px;
+}
+
+.itog_text_wr>div {
+    margin: 8px 0px;
+}
+
 .buttons-alter-itog{
 	margin-bottom: 50px;
 }
@@ -329,11 +392,97 @@ input[type="text"]{
     background: #f4f7fa;
 }
 
+.mnav-items-no.mnav-item-6{
+
+}
+.mnav-items-no.mnav-item-6 .onoffswitch{
+    margin: -2px 5px 5px 0px;
+    float: right;
+}
+
+/* ------ */
 
 
+.compare-item{
+    position: relative;
+}
+
+.compare-item>div span:nth-child(1){
+    position: absolute;
+    margin: -10px 0px 0px -62px;
+    width: 65px;
+}
+
+.compare-item>div span:nth-child(2){
+    position: absolute; 
+    margin: 17px 0px 0px 40px;
+}
+
+.compare-item>div span:nth-child(3){ 
+    position: absolute;
+    margin: -19px 0px 0px 60px;
+}
+
+.compare-item>div span:nth-child(5){
+    position: absolute;
+    margin: 17px 0px 0px -77px;
+}
+
+.compare-item>div span:nth-child(6){
+    position: absolute;
+    margin: -10px 0px 0px -3px;
+    width: 65px;
+}
 
 
+/* -- switch -- */
 
+.onoffswitch {
+    position: relative; width: 63px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #6f8498; border-radius: 19px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 22px; padding: 0; line-height: 22px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 8px;
+    background-color: #293846; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 8px;
+    background-color: #293846; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 11px; margin: 5.5px;
+    background: #293846;
+    position: absolute; top: 0; bottom: 0;
+    right: 37px;
+    border: 2px solid #6f8498; border-radius: 19px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+    background-color: #41C3E5; 
+}
 
 
 
