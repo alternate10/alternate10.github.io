@@ -801,7 +801,7 @@ $(".on-add-recomend").on('click', function(){
 	PushNotification("Подождите ... (окно закроется автоматически)", 0, "on");  
 
 	setTimeout(function () {
-		var itog_data = GenNewItog(300,600);  
+		var itog_data = GenNewItog(250,400);  
 		var itog = GetAdditionalItog(itog_data);
 		var data_alter = GetDataForCharts(itog);
 		InsertDataCharts(data_alter[1], data_alter[0], "recomendations-charts"); 
